@@ -1,20 +1,15 @@
-// This will export a list of implementations and their associated tests
+import tests from './tests';
+
 const implementations = [
     {
       id: 1,
-      content: "Implementation for Entry 1:\nconsole.log('Hello, Entry 1');",
-      tests: [
-        { id: 101, content: "Test 1 for Implementation 1: console.assert(true);" },
-        { id: 102, content: "Test 2 for Implementation 1: console.assert(false);" }
-      ]
+      content: "Implementation for Requirement 1:\nconsole.log('Hello, Requirement 1');",
+      tests: tests.filter(test => test.implementation_id === 1)
     },
     {
       id: 2,
-      content: "Implementation for Entry 2:\nconsole.log('Hello, Entry 2');",
-      tests: [
-        { id: 201, content: "Test 1 for Implementation 2: console.assert(true);" },
-        { id: 202, content: "Test 2 for Implementation 2: console.assert(false);" }
-      ]
+      content: "Implementation for Requirement 2:\nconsole.log('Hello, Requirement 2');",
+      tests: tests.filter(test => test.implementation_id === 2)
     }
   ];
   

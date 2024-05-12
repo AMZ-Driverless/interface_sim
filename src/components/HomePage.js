@@ -1,8 +1,8 @@
 import React from 'react';
 
-const HomePage = ({ entries }) => (
+const HomePage = ({ requirements }) => (
   <div>
-    <h1>Entries</h1>
+    <h1>Requirements</h1>
     <table style={{ width: "100%", border: "1px solid black" }}>
       <thead>
         <tr>
@@ -11,7 +11,7 @@ const HomePage = ({ entries }) => (
         </tr>
       </thead>
       <tbody>
-        {entries.map(entry => (
+        {requirements.map(entry => (
           <tr key={entry.id} style={{ borderBottom: "1px solid #ddd" }}>
             <td>{entry.id}</td>
             <td>{entry.name}</td>
